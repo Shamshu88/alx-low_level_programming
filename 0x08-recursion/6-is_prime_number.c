@@ -12,7 +12,7 @@ int is_prime_number(int n);
  * If the number is not divisible - 1.
  */
 
-int is_prime_number(int n)
+int is_divisible(int num, int div)
 {
 	if (num % div == 0)
 		return (0);
@@ -22,3 +22,25 @@ int is_prime_number(int n)
 
 	return (is_divisible(num, div + 1));
 }
+
+/**
+ * is_prime_number - checks if number is prime or not.
+ * @n: number to be checked.
+ *
+ * Return: 1 if number is prime.
+ * 0 if number is not prime.
+ */
+
+int is_prime_number(int n)
+{
+	if (n <= 1)
+	{
+		return (0);
+	}
+
+	else
+	{
+		return (helperFunction(n, 2));
+	}
+}
+

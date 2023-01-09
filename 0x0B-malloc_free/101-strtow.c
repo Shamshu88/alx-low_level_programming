@@ -3,10 +3,10 @@
 #include <stdlib.h>
 
 /**
- * countWords - counts the numbers o words in the string
+ * countWords - counts the numbers of words in the string
  * @str: source string
  *
- * eturn: the number of words.
+ * Return: the number of words.
  */
 
 int countWords(char *str)
@@ -31,7 +31,7 @@ int countWords(char *str)
 }
 
 /**
- * countChars - counts the numbers o characters in a string
+ * countChars - counts the numbers of characters in a string
  * @str: source string
  *
  * Return: the number of words.
